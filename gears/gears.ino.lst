@@ -1,0 +1,1171 @@
+
+C:\Users\smbaker\AppData\Local\Temp\arduino_build_21324/gears.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	1d c0       	rjmp	.+58     	; 0x3c <__ctors_end>
+   2:	37 c0       	rjmp	.+110    	; 0x72 <__bad_interrupt>
+   4:	36 c0       	rjmp	.+108    	; 0x72 <__bad_interrupt>
+   6:	35 c0       	rjmp	.+106    	; 0x72 <__bad_interrupt>
+   8:	34 c0       	rjmp	.+104    	; 0x72 <__bad_interrupt>
+   a:	ab c1       	rjmp	.+854    	; 0x362 <__vector_5>
+   c:	32 c0       	rjmp	.+100    	; 0x72 <__bad_interrupt>
+   e:	31 c0       	rjmp	.+98     	; 0x72 <__bad_interrupt>
+  10:	30 c0       	rjmp	.+96     	; 0x72 <__bad_interrupt>
+  12:	2f c0       	rjmp	.+94     	; 0x72 <__bad_interrupt>
+  14:	1b c1       	rjmp	.+566    	; 0x24c <__vector_10>
+  16:	2d c0       	rjmp	.+90     	; 0x72 <__bad_interrupt>
+  18:	2c c0       	rjmp	.+88     	; 0x72 <__bad_interrupt>
+  1a:	2b c0       	rjmp	.+86     	; 0x72 <__bad_interrupt>
+  1c:	2a c0       	rjmp	.+84     	; 0x72 <__bad_interrupt>
+
+0000001e <__trampolines_end>:
+__trampolines_start():
+  1e:	01 02       	muls	r16, r17
+  20:	00 00       	nop
+  22:	04 00       	.word	0x0004	; ????
+
+00000024 <digital_pin_to_bit_mask_PGM>:
+  24:	01 02 04 08 10 20                                   ..... 
+
+0000002a <digital_pin_to_port_PGM>:
+  2a:	02 02 02 02 02 02                                   ......
+
+00000030 <port_to_output_PGM>:
+  30:	00 00 00 00 38 00                                   ....8.
+
+00000036 <port_to_mode_PGM>:
+  36:	00 00 00 00 37 00                                   ....7.
+
+0000003c <__ctors_end>:
+__dtors_end():
+  3c:	11 24       	eor	r1, r1
+  3e:	1f be       	out	0x3f, r1	; 63
+  40:	cf e5       	ldi	r28, 0x5F	; 95
+  42:	d2 e0       	ldi	r29, 0x02	; 2
+  44:	de bf       	out	0x3e, r29	; 62
+  46:	cd bf       	out	0x3d, r28	; 61
+
+00000048 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  48:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  4a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  4c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  4e:	e4 eb       	ldi	r30, 0xB4	; 180
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  50:	f5 e0       	ldi	r31, 0x05	; 5
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2415
+  52:	02 c0       	rjmp	.+4      	; 0x58 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2418
+  54:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2423
+  56:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  58:	ae 36       	cpi	r26, 0x6E	; 110
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  5a:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2427
+  5c:	d9 f7       	brne	.-10     	; 0x54 <__do_copy_data+0xc>
+
+0000005e <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  5e:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  60:	ae e6       	ldi	r26, 0x6E	; 110
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  62:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2445
+  64:	01 c0       	rjmp	.+2      	; 0x68 <.do_clear_bss_start>
+
+00000066 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2447
+  66:	1d 92       	st	X+, r1
+
+00000068 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  68:	ad 37       	cpi	r26, 0x7D	; 125
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  6a:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2451
+  6c:	e1 f7       	brne	.-8      	; 0x66 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  6e:	61 d1       	rcall	.+706    	; 0x332 <main>
+  70:	9f c2       	rjmp	.+1342   	; 0x5b0 <_exit>
+
+00000072 <__bad_interrupt>:
+__vector_1():
+  72:	c6 cf       	rjmp	.-116    	; 0x0 <__vectors>
+
+00000074 <Sawtooth()>:
+_Z8Sawtoothv():
+Y:\projects\pi\gears\gears/gears.ino:32
+  TIMSK = 1<<OCIE0A;                       // Enable compare match, disable overflow
+  OCR0A = 60;                              // Divide by 61
+}
+
+void Sawtooth () {
+  Acc = Acc + Jump;
+  74:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+  78:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+  7c:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+  80:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+  84:	82 0f       	add	r24, r18
+  86:	93 1f       	adc	r25, r19
+  88:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+  8c:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:33
+  OCR1A = Acc >> 8;
+  90:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <Acc>
+  94:	90 91 73 00 	lds	r25, 0x0073	; 0x800073 <Acc+0x1>
+  98:	9e bd       	out	0x2e, r25	; 46
+  9a:	08 95       	ret
+
+0000009c <Square()>:
+_Z6Squarev():
+Y:\projects\pi\gears\gears/gears.ino:37
+}
+
+void Square () {
+  Acc = Acc + Jump;
+  9c:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+  a0:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+  a4:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+  a8:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+  ac:	82 0f       	add	r24, r18
+  ae:	93 1f       	adc	r25, r19
+  b0:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+  b4:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:38
+  int8_t temp = Acc>>8;
+  b8:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <Acc>
+  bc:	90 91 73 00 	lds	r25, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:39
+  OCR1A = temp>>7;
+  c0:	89 2f       	mov	r24, r25
+  c2:	99 0f       	add	r25, r25
+  c4:	99 0b       	sbc	r25, r25
+  c6:	88 0f       	add	r24, r24
+  c8:	89 2f       	mov	r24, r25
+  ca:	88 1f       	adc	r24, r24
+  cc:	99 0b       	sbc	r25, r25
+  ce:	8e bd       	out	0x2e, r24	; 46
+  d0:	08 95       	ret
+
+000000d2 <Rectangle()>:
+_Z9Rectanglev():
+Y:\projects\pi\gears\gears/gears.ino:43
+}
+
+void Rectangle () {
+  Acc = Acc + Jump;
+  d2:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+  d6:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+  da:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+  de:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+  e2:	82 0f       	add	r24, r18
+  e4:	93 1f       	adc	r25, r19
+  e6:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+  ea:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:44
+  int8_t temp = Acc>>8;
+  ee:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+  f2:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:45
+  temp = temp & temp<<1;
+  f6:	83 2f       	mov	r24, r19
+  f8:	88 0f       	add	r24, r24
+  fa:	99 0b       	sbc	r25, r25
+Y:\projects\pi\gears\gears/gears.ino:46
+  OCR1A = temp>>7;
+  fc:	83 23       	and	r24, r19
+  fe:	08 2e       	mov	r0, r24
+ 100:	00 0c       	add	r0, r0
+ 102:	99 0b       	sbc	r25, r25
+ 104:	88 0f       	add	r24, r24
+ 106:	89 2f       	mov	r24, r25
+ 108:	88 1f       	adc	r24, r24
+ 10a:	99 0b       	sbc	r25, r25
+ 10c:	8e bd       	out	0x2e, r24	; 46
+ 10e:	08 95       	ret
+
+00000110 <Triangle()>:
+_Z8Trianglev():
+Y:\projects\pi\gears\gears/gears.ino:51
+}
+
+void Triangle () {
+  int8_t temp, mask;
+  Acc = Acc + Jump;
+ 110:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 114:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+ 118:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+ 11c:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+ 120:	82 0f       	add	r24, r18
+ 122:	93 1f       	adc	r25, r19
+ 124:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+ 128:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:52
+  temp = Acc>>8;
+ 12c:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 130:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:53
+  mask = temp>>7;
+ 134:	83 2f       	mov	r24, r19
+ 136:	03 2e       	mov	r0, r19
+ 138:	00 0c       	add	r0, r0
+ 13a:	99 0b       	sbc	r25, r25
+ 13c:	88 0f       	add	r24, r24
+ 13e:	89 2f       	mov	r24, r25
+ 140:	88 1f       	adc	r24, r24
+ 142:	99 0b       	sbc	r25, r25
+Y:\projects\pi\gears\gears/gears.ino:55
+  temp = temp ^ mask;
+  OCR1A = temp<<1;
+ 144:	83 27       	eor	r24, r19
+ 146:	88 0f       	add	r24, r24
+ 148:	8e bd       	out	0x2e, r24	; 46
+ 14a:	08 95       	ret
+
+0000014c <Chainsaw()>:
+_Z8Chainsawv():
+Y:\projects\pi\gears\gears/gears.ino:60
+}
+
+void Chainsaw () {
+  int8_t temp, mask, top;
+  Acc = Acc + Jump;
+ 14c:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 150:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+ 154:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+ 158:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+ 15c:	82 0f       	add	r24, r18
+ 15e:	93 1f       	adc	r25, r19
+ 160:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+ 164:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:61
+  temp = Acc>>8;
+ 168:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 16c:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:63
+  mask = temp>>7;
+  top = temp & 0x80;
+ 170:	23 2f       	mov	r18, r19
+ 172:	20 78       	andi	r18, 0x80	; 128
+Y:\projects\pi\gears\gears/gears.ino:64
+  temp = (temp ^ mask) | top;
+ 174:	83 2f       	mov	r24, r19
+ 176:	03 2e       	mov	r0, r19
+ 178:	00 0c       	add	r0, r0
+ 17a:	99 0b       	sbc	r25, r25
+ 17c:	88 0f       	add	r24, r24
+ 17e:	89 2f       	mov	r24, r25
+ 180:	88 1f       	adc	r24, r24
+ 182:	99 0b       	sbc	r25, r25
+ 184:	83 27       	eor	r24, r19
+Y:\projects\pi\gears\gears/gears.ino:65
+  OCR1A = temp;
+ 186:	82 2b       	or	r24, r18
+ 188:	8e bd       	out	0x2e, r24	; 46
+ 18a:	08 95       	ret
+
+0000018c <Pulse()>:
+_Z5Pulsev():
+Y:\projects\pi\gears\gears/gears.ino:69
+}
+
+void Pulse () {
+  Acc = Acc + Jump;
+ 18c:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 190:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+ 194:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <Jump>
+ 198:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <Jump+0x1>
+ 19c:	82 0f       	add	r24, r18
+ 19e:	93 1f       	adc	r25, r19
+ 1a0:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+ 1a4:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:70
+  int8_t temp = Acc>>8;
+ 1a8:	40 91 72 00 	lds	r20, 0x0072	; 0x800072 <Acc>
+ 1ac:	50 91 73 00 	lds	r21, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:71
+  temp = temp & temp<<1 & temp<<2 & temp<<3;
+ 1b0:	85 2f       	mov	r24, r21
+ 1b2:	05 2e       	mov	r0, r21
+ 1b4:	00 0c       	add	r0, r0
+ 1b6:	99 0b       	sbc	r25, r25
+ 1b8:	bc 01       	movw	r22, r24
+ 1ba:	66 0f       	add	r22, r22
+ 1bc:	77 1f       	adc	r23, r23
+ 1be:	9c 01       	movw	r18, r24
+ 1c0:	22 0f       	add	r18, r18
+ 1c2:	33 1f       	adc	r19, r19
+ 1c4:	22 0f       	add	r18, r18
+ 1c6:	33 1f       	adc	r19, r19
+ 1c8:	26 23       	and	r18, r22
+ 1ca:	25 23       	and	r18, r21
+Y:\projects\pi\gears\gears/gears.ino:72
+  OCR1A = temp>>7;
+ 1cc:	53 e0       	ldi	r21, 0x03	; 3
+ 1ce:	88 0f       	add	r24, r24
+ 1d0:	99 1f       	adc	r25, r25
+ 1d2:	5a 95       	dec	r21
+ 1d4:	e1 f7       	brne	.-8      	; 0x1ce <Pulse()+0x42>
+ 1d6:	82 23       	and	r24, r18
+ 1d8:	08 2e       	mov	r0, r24
+ 1da:	00 0c       	add	r0, r0
+ 1dc:	99 0b       	sbc	r25, r25
+ 1de:	88 0f       	add	r24, r24
+ 1e0:	89 2f       	mov	r24, r25
+ 1e2:	88 1f       	adc	r24, r24
+ 1e4:	99 0b       	sbc	r25, r25
+ 1e6:	8e bd       	out	0x2e, r24	; 46
+ 1e8:	08 95       	ret
+
+000001ea <Noise()>:
+_Z5Noisev():
+Y:\projects\pi\gears\gears/gears.ino:76
+}
+
+void Noise () {
+  int8_t temp = Acc & 1;
+ 1ea:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <Acc>
+ 1ee:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <Acc+0x1>
+Y:\projects\pi\gears\gears/gears.ino:77
+  Acc = Acc >> 1;
+ 1f2:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <Acc>
+ 1f6:	90 91 73 00 	lds	r25, 0x0073	; 0x800073 <Acc+0x1>
+ 1fa:	96 95       	lsr	r25
+ 1fc:	87 95       	ror	r24
+ 1fe:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+ 202:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:78
+  if (temp == 0) Acc = Acc ^ 0xB400;
+ 206:	20 fd       	sbrc	r18, 0
+ 208:	0a c0       	rjmp	.+20     	; 0x21e <Noise()+0x34>
+Y:\projects\pi\gears\gears/gears.ino:78 (discriminator 1)
+ 20a:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <Acc>
+ 20e:	90 91 73 00 	lds	r25, 0x0073	; 0x800073 <Acc+0x1>
+ 212:	24 eb       	ldi	r18, 0xB4	; 180
+ 214:	92 27       	eor	r25, r18
+ 216:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <Acc+0x1>
+ 21a:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <Acc>
+Y:\projects\pi\gears\gears/gears.ino:79
+  OCR1A = Acc;
+ 21e:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <Acc>
+ 222:	90 91 73 00 	lds	r25, 0x0073	; 0x800073 <Acc+0x1>
+ 226:	8e bd       	out	0x2e, r24	; 46
+ 228:	08 95       	ret
+
+0000022a <SetupDDS()>:
+_Z8SetupDDSv():
+Y:\projects\pi\gears\gears/gears.ino:17
+
+volatile unsigned int Acc, Jump;
+
+void SetupDDS () {
+  // Enable 64 MHz PLL and use as source for Timer1
+  PLLCSR = 1<<PCKE | 1<<PLLE;     
+ 22a:	86 e0       	ldi	r24, 0x06	; 6
+ 22c:	87 bd       	out	0x27, r24	; 39
+Y:\projects\pi\gears\gears/gears.ino:20
+
+  // Set up Timer/Counter1 for PWM output
+  TIMSK = 0;                               // Timer interrupts OFF
+ 22e:	19 be       	out	0x39, r1	; 57
+Y:\projects\pi\gears\gears/gears.ino:21
+  TCCR1 = 1<<PWM1A | 2<<COM1A0 | 1<<CS10;  // PWM A, clear on match, 1:1 prescale
+ 230:	81 e6       	ldi	r24, 0x61	; 97
+ 232:	80 bf       	out	0x30, r24	; 48
+Y:\projects\pi\gears\gears/gears.ino:22
+  pinMode(1, OUTPUT);                      // Enable PWM output pin
+ 234:	61 e0       	ldi	r22, 0x01	; 1
+ 236:	81 e0       	ldi	r24, 0x01	; 1
+ 238:	16 d1       	rcall	.+556    	; 0x466 <pinMode>
+Y:\projects\pi\gears\gears/gears.ino:25
+
+  // Set up Timer/Counter0 for 20kHz interrupt to output samples.
+  TCCR0A = 3<<WGM00;                       // Fast PWM
+ 23a:	83 e0       	ldi	r24, 0x03	; 3
+ 23c:	8a bd       	out	0x2a, r24	; 42
+Y:\projects\pi\gears\gears/gears.ino:26
+  TCCR0B = 1<<WGM02 | 2<<CS00;             // 1/8 prescale
+ 23e:	8a e0       	ldi	r24, 0x0A	; 10
+ 240:	83 bf       	out	0x33, r24	; 51
+Y:\projects\pi\gears\gears/gears.ino:27
+  TIMSK = 1<<OCIE0A;                       // Enable compare match, disable overflow
+ 242:	80 e1       	ldi	r24, 0x10	; 16
+ 244:	89 bf       	out	0x39, r24	; 57
+Y:\projects\pi\gears\gears/gears.ino:28
+  OCR0A = 60;                              // Divide by 61
+ 246:	8c e3       	ldi	r24, 0x3C	; 60
+ 248:	89 bd       	out	0x29, r24	; 41
+ 24a:	08 95       	ret
+
+0000024c <__vector_10>:
+__vector_10():
+Y:\projects\pi\gears\gears/gears.ino:86
+
+const int nWaves = 7;
+wavefun_t Waves[nWaves] = {Triangle, Sawtooth, Square, Rectangle, Pulse, Chainsaw, Noise};
+wavefun_t Wavefun;
+
+ISR(TIMER0_COMPA_vect) {
+ 24c:	1f 92       	push	r1
+ 24e:	0f 92       	push	r0
+ 250:	0f b6       	in	r0, 0x3f	; 63
+ 252:	0f 92       	push	r0
+ 254:	11 24       	eor	r1, r1
+ 256:	2f 93       	push	r18
+ 258:	3f 93       	push	r19
+ 25a:	4f 93       	push	r20
+ 25c:	5f 93       	push	r21
+ 25e:	6f 93       	push	r22
+ 260:	7f 93       	push	r23
+ 262:	8f 93       	push	r24
+ 264:	9f 93       	push	r25
+ 266:	af 93       	push	r26
+ 268:	bf 93       	push	r27
+ 26a:	ef 93       	push	r30
+ 26c:	ff 93       	push	r31
+Y:\projects\pi\gears\gears/gears.ino:87
+  Wavefun();
+ 26e:	e0 91 6e 00 	lds	r30, 0x006E	; 0x80006e <__data_end>
+ 272:	f0 91 6f 00 	lds	r31, 0x006F	; 0x80006f <__data_end+0x1>
+ 276:	09 95       	icall
+Y:\projects\pi\gears\gears/gears.ino:88
+}
+ 278:	ff 91       	pop	r31
+ 27a:	ef 91       	pop	r30
+ 27c:	bf 91       	pop	r27
+ 27e:	af 91       	pop	r26
+ 280:	9f 91       	pop	r25
+ 282:	8f 91       	pop	r24
+ 284:	7f 91       	pop	r23
+ 286:	6f 91       	pop	r22
+ 288:	5f 91       	pop	r21
+ 28a:	4f 91       	pop	r20
+ 28c:	3f 91       	pop	r19
+ 28e:	2f 91       	pop	r18
+ 290:	0f 90       	pop	r0
+ 292:	0f be       	out	0x3f, r0	; 63
+ 294:	0f 90       	pop	r0
+ 296:	1f 90       	pop	r1
+ 298:	18 95       	reti
+
+0000029a <setup>:
+setup():
+Y:\projects\pi\gears\gears/gears.ino:91
+
+void setup() {
+  pinMode(PIN_DIR, OUTPUT);
+ 29a:	61 e0       	ldi	r22, 0x01	; 1
+ 29c:	80 e0       	ldi	r24, 0x00	; 0
+ 29e:	e3 d0       	rcall	.+454    	; 0x466 <pinMode>
+Y:\projects\pi\gears\gears/gears.ino:92
+  pinMode(PIN_SLEEP, OUTPUT);
+ 2a0:	61 e0       	ldi	r22, 0x01	; 1
+ 2a2:	82 e0       	ldi	r24, 0x02	; 2
+ 2a4:	e0 d0       	rcall	.+448    	; 0x466 <pinMode>
+Y:\projects\pi\gears\gears/gears.ino:94
+    
+  digitalWrite(PIN_DIR, 1);
+ 2a6:	61 e0       	ldi	r22, 0x01	; 1
+ 2a8:	80 e0       	ldi	r24, 0x00	; 0
+ 2aa:	2c d1       	rcall	.+600    	; 0x504 <digitalWrite>
+Y:\projects\pi\gears\gears/gears.ino:95
+  digitalWrite(PIN_SLEEP, 1); 
+ 2ac:	61 e0       	ldi	r22, 0x01	; 1
+ 2ae:	82 e0       	ldi	r24, 0x02	; 2
+ 2b0:	29 d1       	rcall	.+594    	; 0x504 <digitalWrite>
+Y:\projects\pi\gears\gears/gears.ino:97
+
+  Wave = 2; Freq = 100;     // Start with 100Hz Square
+ 2b2:	82 e0       	ldi	r24, 0x02	; 2
+ 2b4:	90 e0       	ldi	r25, 0x00	; 0
+ 2b6:	90 93 80 00 	sts	0x0080, r25	; 0x800080 <Wave+0x1>
+ 2ba:	80 93 7f 00 	sts	0x007F, r24	; 0x80007f <Wave>
+ 2be:	84 e6       	ldi	r24, 0x64	; 100
+ 2c0:	90 e0       	ldi	r25, 0x00	; 0
+ 2c2:	90 93 7e 00 	sts	0x007E, r25	; 0x80007e <__bss_end+0x1>
+ 2c6:	80 93 7d 00 	sts	0x007D, r24	; 0x80007d <__bss_end>
+Y:\projects\pi\gears\gears/gears.ino:98
+  Wavefun = Waves[Wave];
+ 2ca:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <Waves+0x4>
+ 2ce:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <Waves+0x5>
+ 2d2:	90 93 6f 00 	sts	0x006F, r25	; 0x80006f <__data_end+0x1>
+ 2d6:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__data_end>
+Y:\projects\pi\gears\gears/gears.ino:99
+  MCUSR = 0;
+ 2da:	14 be       	out	0x34, r1	; 52
+Y:\projects\pi\gears\gears/gears.ino:100
+  SetupDDS();
+ 2dc:	a6 df       	rcall	.-180    	; 0x22a <SetupDDS()>
+Y:\projects\pi\gears\gears/gears.ino:101
+  Jump = Freq*4;
+ 2de:	80 91 7d 00 	lds	r24, 0x007D	; 0x80007d <__bss_end>
+ 2e2:	90 91 7e 00 	lds	r25, 0x007E	; 0x80007e <__bss_end+0x1>
+ 2e6:	88 0f       	add	r24, r24
+ 2e8:	99 1f       	adc	r25, r25
+ 2ea:	88 0f       	add	r24, r24
+ 2ec:	99 1f       	adc	r25, r25
+ 2ee:	90 93 71 00 	sts	0x0071, r25	; 0x800071 <Jump+0x1>
+ 2f2:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <Jump>
+ 2f6:	08 95       	ret
+
+000002f8 <readADC()>:
+_Z7readADCv():
+Y:\projects\pi\gears\gears/gears.ino:111
+    ADMUX =
+            (1 << ADLAR) |     // left shift result
+            (0 << REFS1) |     // Sets ref. voltage to VCC, bit 1
+            (0 << REFS0) |     // Sets ref. voltage to VCC, bit 0
+            (1 << MUX1)  |     // use ADC3 for input (PB3), MUX bits 11
+            (1 << MUX0);
+ 2f8:	83 e2       	ldi	r24, 0x23	; 35
+ 2fa:	87 b9       	out	0x07, r24	; 7
+Y:\projects\pi\gears\gears/gears.ino:117
+
+    ADCSRA =
+            (1 << ADEN)  |     // Enable ADC
+            (1 << ADPS2) |     // set prescaler to 64, bit 2
+            (1 << ADPS1) |     // set prescaler to 64, bit 1
+            (0 << ADPS0);      // set prescaler to 64, bit 0
+ 2fc:	86 e8       	ldi	r24, 0x86	; 134
+ 2fe:	86 b9       	out	0x06, r24	; 6
+Y:\projects\pi\gears\gears/gears.ino:119
+
+    ADCSRA |= (1 << ADSC);         // start ADC measurement
+ 300:	36 9a       	sbi	0x06, 6	; 6
+Y:\projects\pi\gears\gears/gears.ino:120
+    while (ADCSRA & (1 << ADSC) ); // wait till conversion complete
+ 302:	36 99       	sbic	0x06, 6	; 6
+ 304:	fe cf       	rjmp	.-4      	; 0x302 <readADC()+0xa>
+Y:\projects\pi\gears\gears/gears.ino:122
+
+    return ADCH;
+ 306:	85 b1       	in	r24, 0x05	; 5
+Y:\projects\pi\gears\gears/gears.ino:123
+}
+ 308:	08 95       	ret
+
+0000030a <loop>:
+loop():
+Y:\projects\pi\gears\gears/gears.ino:129 (discriminator 1)
+
+void loop() {
+  uint8_t pot;
+  
+  while (1)  {
+    pot = readADC();
+ 30a:	f6 df       	rcall	.-20     	; 0x2f8 <readADC()>
+Y:\projects\pi\gears\gears/gears.ino:130 (discriminator 1)
+    Freq = int(pot&0xFC) * 12 + 1; // maximum of around 750 hz at 1/4 microstep
+ 30c:	8c 7f       	andi	r24, 0xFC	; 252
+ 30e:	90 e0       	ldi	r25, 0x00	; 0
+ 310:	6c e0       	ldi	r22, 0x0C	; 12
+ 312:	70 e0       	ldi	r23, 0x00	; 0
+ 314:	3c d1       	rcall	.+632    	; 0x58e <__mulhi3>
+ 316:	01 96       	adiw	r24, 0x01	; 1
+ 318:	90 93 7e 00 	sts	0x007E, r25	; 0x80007e <__bss_end+0x1>
+ 31c:	80 93 7d 00 	sts	0x007D, r24	; 0x80007d <__bss_end>
+Y:\projects\pi\gears\gears/gears.ino:132 (discriminator 1)
+    
+    Jump = Freq * 4;
+ 320:	88 0f       	add	r24, r24
+ 322:	99 1f       	adc	r25, r25
+ 324:	88 0f       	add	r24, r24
+ 326:	99 1f       	adc	r25, r25
+ 328:	90 93 71 00 	sts	0x0071, r25	; 0x800071 <Jump+0x1>
+ 32c:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <Jump>
+ 330:	ec cf       	rjmp	.-40     	; 0x30a <loop>
+
+00000332 <main>:
+main():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+  #ifdef TUNED_OSCCAL_VALUE
+  OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 332:	81 b7       	in	r24, 0x31	; 49
+ 334:	81 bf       	out	0x31, r24	; 49
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/main.cpp:8
+  #endif
+  init();
+ 336:	5f d0       	rcall	.+190    	; 0x3f6 <init>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/main.cpp:10
+
+  setup();
+ 338:	b0 df       	rcall	.-160    	; 0x29a <setup>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/main.cpp:13 (discriminator 1)
+
+  for (;;)
+    loop();
+ 33a:	e7 df       	rcall	.-50     	; 0x30a <loop>
+ 33c:	fe cf       	rjmp	.-4      	; 0x33a <main+0x8>
+
+0000033e <initToneTimerInternal>:
+initToneTimerInternal():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:621
+PLLCSR |= PCKE;
+}
+#endif
+  #if INITIALIZE_SECONDARY_TIMERS
+  // Prepare the timer for PWM
+    initToneTimerInternal();
+ 33e:	80 b7       	in	r24, 0x30	; 48
+ 340:	80 7f       	andi	r24, 0xF0	; 240
+ 342:	80 bf       	out	0x30, r24	; 48
+ 344:	80 b7       	in	r24, 0x30	; 48
+ 346:	80 68       	ori	r24, 0x80	; 128
+ 348:	80 bf       	out	0x30, r24	; 48
+ 34a:	80 b7       	in	r24, 0x30	; 48
+ 34c:	80 64       	ori	r24, 0x40	; 64
+ 34e:	80 bf       	out	0x30, r24	; 48
+ 350:	8c b5       	in	r24, 0x2c	; 44
+ 352:	80 64       	ori	r24, 0x40	; 64
+ 354:	8c bd       	out	0x2c, r24	; 44
+ 356:	8f ef       	ldi	r24, 0xFF	; 255
+ 358:	8d bd       	out	0x2d, r24	; 45
+ 35a:	80 b7       	in	r24, 0x30	; 48
+ 35c:	87 60       	ori	r24, 0x07	; 7
+ 35e:	80 bf       	out	0x30, r24	; 48
+ 360:	08 95       	ret
+
+00000362 <__vector_5>:
+__vector_5():
+ 362:	1f 92       	push	r1
+ 364:	0f 92       	push	r0
+ 366:	0f b6       	in	r0, 0x3f	; 63
+ 368:	0f 92       	push	r0
+ 36a:	11 24       	eor	r1, r1
+ 36c:	2f 93       	push	r18
+ 36e:	3f 93       	push	r19
+ 370:	8f 93       	push	r24
+ 372:	9f 93       	push	r25
+ 374:	af 93       	push	r26
+ 376:	bf 93       	push	r27
+ 378:	80 91 75 00 	lds	r24, 0x0075	; 0x800075 <millis_timer_millis>
+ 37c:	90 91 76 00 	lds	r25, 0x0076	; 0x800076 <millis_timer_millis+0x1>
+ 380:	a0 91 77 00 	lds	r26, 0x0077	; 0x800077 <millis_timer_millis+0x2>
+ 384:	b0 91 78 00 	lds	r27, 0x0078	; 0x800078 <millis_timer_millis+0x3>
+ 388:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <millis_timer_fract>
+ 38c:	26 e0       	ldi	r18, 0x06	; 6
+ 38e:	23 0f       	add	r18, r19
+ 390:	2d 37       	cpi	r18, 0x7D	; 125
+ 392:	30 f0       	brcs	.+12     	; 0x3a0 <__vector_5+0x3e>
+ 394:	29 e8       	ldi	r18, 0x89	; 137
+ 396:	23 0f       	add	r18, r19
+ 398:	03 96       	adiw	r24, 0x03	; 3
+ 39a:	a1 1d       	adc	r26, r1
+ 39c:	b1 1d       	adc	r27, r1
+ 39e:	03 c0       	rjmp	.+6      	; 0x3a6 <__vector_5+0x44>
+ 3a0:	02 96       	adiw	r24, 0x02	; 2
+ 3a2:	a1 1d       	adc	r26, r1
+ 3a4:	b1 1d       	adc	r27, r1
+ 3a6:	20 93 74 00 	sts	0x0074, r18	; 0x800074 <millis_timer_fract>
+ 3aa:	80 93 75 00 	sts	0x0075, r24	; 0x800075 <millis_timer_millis>
+ 3ae:	90 93 76 00 	sts	0x0076, r25	; 0x800076 <millis_timer_millis+0x1>
+ 3b2:	a0 93 77 00 	sts	0x0077, r26	; 0x800077 <millis_timer_millis+0x2>
+ 3b6:	b0 93 78 00 	sts	0x0078, r27	; 0x800078 <millis_timer_millis+0x3>
+ 3ba:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <millis_timer_overflow_count>
+ 3be:	90 91 7a 00 	lds	r25, 0x007A	; 0x80007a <millis_timer_overflow_count+0x1>
+ 3c2:	a0 91 7b 00 	lds	r26, 0x007B	; 0x80007b <millis_timer_overflow_count+0x2>
+ 3c6:	b0 91 7c 00 	lds	r27, 0x007C	; 0x80007c <millis_timer_overflow_count+0x3>
+ 3ca:	01 96       	adiw	r24, 0x01	; 1
+ 3cc:	a1 1d       	adc	r26, r1
+ 3ce:	b1 1d       	adc	r27, r1
+ 3d0:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <millis_timer_overflow_count>
+ 3d4:	90 93 7a 00 	sts	0x007A, r25	; 0x80007a <millis_timer_overflow_count+0x1>
+ 3d8:	a0 93 7b 00 	sts	0x007B, r26	; 0x80007b <millis_timer_overflow_count+0x2>
+ 3dc:	b0 93 7c 00 	sts	0x007C, r27	; 0x80007c <millis_timer_overflow_count+0x3>
+ 3e0:	bf 91       	pop	r27
+ 3e2:	af 91       	pop	r26
+ 3e4:	9f 91       	pop	r25
+ 3e6:	8f 91       	pop	r24
+ 3e8:	3f 91       	pop	r19
+ 3ea:	2f 91       	pop	r18
+ 3ec:	0f 90       	pop	r0
+ 3ee:	0f be       	out	0x3f, r0	; 63
+ 3f0:	0f 90       	pop	r0
+ 3f2:	1f 90       	pop	r1
+ 3f4:	18 95       	reti
+
+000003f6 <init>:
+init():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:784
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 3f6:	8a b5       	in	r24, 0x2a	; 42
+ 3f8:	82 60       	ori	r24, 0x02	; 2
+ 3fa:	8a bd       	out	0x2a, r24	; 42
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:785
+  sbi(TCCR0A, WGM00);
+ 3fc:	8a b5       	in	r24, 0x2a	; 42
+ 3fe:	81 60       	ori	r24, 0x01	; 1
+ 400:	8a bd       	out	0x2a, r24	; 42
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:808
+  #endif
+
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 402:	83 b7       	in	r24, 0x33	; 51
+ 404:	88 7f       	andi	r24, 0xF8	; 248
+ 406:	83 60       	ori	r24, 0x03	; 3
+ 408:	83 bf       	out	0x33, r24	; 51
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:820
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 40a:	78 94       	sei
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:824
+
+  // Enable the overlow interrupt (this is the basic system tic-toc for millis)
+  #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  sbi(TIMSK, TOIE0);
+ 40c:	89 b7       	in	r24, 0x39	; 57
+ 40e:	82 60       	ori	r24, 0x02	; 2
+ 410:	89 bf       	out	0x39, r24	; 57
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:837
+  #error Millis() Timer overflow interrupt not set correctly
+  #endif
+
+  // Initialize the timer used for Tone
+  #if INITIALIZE_SECONDARY_TIMERS
+    initToneTimerInternal();
+ 412:	95 df       	rcall	.-214    	; 0x33e <initToneTimerInternal>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:844
+
+  // Initialize the ADC
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+  #if defined(ADCSRA)
+    // set a2d prescale factor
+  ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+ 414:	86 b1       	in	r24, 0x06	; 6
+ 416:	88 77       	andi	r24, 0x78	; 120
+ 418:	86 68       	ori	r24, 0x86	; 134
+ 41a:	86 b9       	out	0x06, r24	; 6
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring.c:846
+    // enable a2d conversions
+    sbi(ADCSRA, ADEN);
+ 41c:	37 9a       	sbi	0x06, 7	; 6
+ 41e:	08 95       	ret
+
+00000420 <turnOffPWM>:
+turnOffPWM():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+  if( timer == TIMER0A){
+ 420:	81 30       	cpi	r24, 0x01	; 1
+ 422:	31 f4       	brne	.+12     	; 0x430 <turnOffPWM+0x10>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:68
+    cbi(TCCR0A, COM0A1);
+ 424:	8a b5       	in	r24, 0x2a	; 42
+ 426:	8f 77       	andi	r24, 0x7F	; 127
+ 428:	8a bd       	out	0x2a, r24	; 42
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:69
+    cbi(TCCR0A, COM0A0);
+ 42a:	8a b5       	in	r24, 0x2a	; 42
+ 42c:	8f 7b       	andi	r24, 0xBF	; 191
+ 42e:	07 c0       	rjmp	.+14     	; 0x43e <turnOffPWM+0x1e>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:74
+  } else
+  #endif
+
+  #if defined(TCCR0A) && defined(COM0B1)
+  if( timer == TIMER0B){
+ 430:	82 30       	cpi	r24, 0x02	; 2
+ 432:	39 f4       	brne	.+14     	; 0x442 <turnOffPWM+0x22>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:75
+    cbi(TCCR0A, COM0B1);
+ 434:	8a b5       	in	r24, 0x2a	; 42
+ 436:	8f 7d       	andi	r24, 0xDF	; 223
+ 438:	8a bd       	out	0x2a, r24	; 42
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:76
+    cbi(TCCR0A, COM0B0);
+ 43a:	8a b5       	in	r24, 0x2a	; 42
+ 43c:	8f 7e       	andi	r24, 0xEF	; 239
+ 43e:	8a bd       	out	0x2a, r24	; 42
+ 440:	08 95       	ret
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:105
+    cbi(TCCR1C,COM1D0);
+    //cbi(TCCR1A,PWM1D);
+  } else
+    #endif
+  #if defined(TCCR1) && defined(COM1A1)
+  if(timer == TIMER1A){
+ 442:	83 30       	cpi	r24, 0x03	; 3
+ 444:	39 f4       	brne	.+14     	; 0x454 <turnOffPWM+0x34>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:106
+    cbi(TCCR1, COM1A1);
+ 446:	80 b7       	in	r24, 0x30	; 48
+ 448:	8f 7d       	andi	r24, 0xDF	; 223
+ 44a:	80 bf       	out	0x30, r24	; 48
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:107
+    cbi(TCCR1, COM1A0);
+ 44c:	80 b7       	in	r24, 0x30	; 48
+ 44e:	8f 7e       	andi	r24, 0xEF	; 239
+ 450:	80 bf       	out	0x30, r24	; 48
+ 452:	08 95       	ret
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:125
+  #endif
+  } else
+  #endif
+
+  #if defined(TCCR1) && defined(COM1B1)
+  if( timer == TIMER1B){
+ 454:	84 30       	cpi	r24, 0x04	; 4
+ 456:	31 f4       	brne	.+12     	; 0x464 <turnOffPWM+0x44>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:126
+    cbi(GTCCR, COM1B1);
+ 458:	8c b5       	in	r24, 0x2c	; 44
+ 45a:	8f 7d       	andi	r24, 0xDF	; 223
+ 45c:	8c bd       	out	0x2c, r24	; 44
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:127
+    cbi(GTCCR, COM1B0);
+ 45e:	8c b5       	in	r24, 0x2c	; 44
+ 460:	8f 7e       	andi	r24, 0xEF	; 239
+ 462:	8c bd       	out	0x2c, r24	; 44
+ 464:	08 95       	ret
+
+00000466 <pinMode>:
+pinMode():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 466:	cf 93       	push	r28
+ 468:	df 93       	push	r29
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 46a:	87 ff       	sbrs	r24, 7
+ 46c:	11 c0       	rjmp	.+34     	; 0x490 <pinMode+0x2a>
+ 46e:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34 (discriminator 1)
+ 470:	41 f0       	breq	.+16     	; 0x482 <pinMode+0x1c>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34 (discriminator 2)
+ 472:	81 30       	cpi	r24, 0x01	; 1
+ 474:	41 f0       	breq	.+16     	; 0x486 <pinMode+0x20>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34 (discriminator 4)
+ 476:	82 30       	cpi	r24, 0x02	; 2
+ 478:	41 f0       	breq	.+16     	; 0x48a <pinMode+0x24>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34 (discriminator 6)
+ 47a:	83 30       	cpi	r24, 0x03	; 3
+ 47c:	41 f0       	breq	.+16     	; 0x48e <pinMode+0x28>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34
+ 47e:	8f ef       	ldi	r24, 0xFF	; 255
+ 480:	07 c0       	rjmp	.+14     	; 0x490 <pinMode+0x2a>
+ 482:	85 e0       	ldi	r24, 0x05	; 5
+ 484:	05 c0       	rjmp	.+10     	; 0x490 <pinMode+0x2a>
+ 486:	82 e0       	ldi	r24, 0x02	; 2
+ 488:	03 c0       	rjmp	.+6      	; 0x490 <pinMode+0x2a>
+ 48a:	84 e0       	ldi	r24, 0x04	; 4
+ 48c:	01 c0       	rjmp	.+2      	; 0x490 <pinMode+0x2a>
+ 48e:	83 e0       	ldi	r24, 0x03	; 3
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+ 490:	90 e0       	ldi	r25, 0x00	; 0
+ 492:	fc 01       	movw	r30, r24
+ 494:	ec 5d       	subi	r30, 0xDC	; 220
+ 496:	ff 4f       	sbci	r31, 0xFF	; 255
+ 498:	24 91       	lpm	r18, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 49a:	fc 01       	movw	r30, r24
+ 49c:	e6 5d       	subi	r30, 0xD6	; 214
+ 49e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4a0:	84 91       	lpm	r24, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 4a2:	88 23       	and	r24, r24
+ 4a4:	61 f1       	breq	.+88     	; 0x4fe <pinMode+0x98>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 4a6:	90 e0       	ldi	r25, 0x00	; 0
+ 4a8:	88 0f       	add	r24, r24
+ 4aa:	99 1f       	adc	r25, r25
+ 4ac:	fc 01       	movw	r30, r24
+ 4ae:	ea 5c       	subi	r30, 0xCA	; 202
+ 4b0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4b2:	c5 91       	lpm	r28, Z+
+ 4b4:	d4 91       	lpm	r29, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 4b6:	fc 01       	movw	r30, r24
+ 4b8:	e0 5d       	subi	r30, 0xD0	; 208
+ 4ba:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4bc:	a5 91       	lpm	r26, Z+
+ 4be:	b4 91       	lpm	r27, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+ 4c0:	61 11       	cpse	r22, r1
+ 4c2:	09 c0       	rjmp	.+18     	; 0x4d6 <pinMode+0x70>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+ 4c4:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:46
+                cli();
+ 4c6:	f8 94       	cli
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 4c8:	88 81       	ld	r24, Y
+ 4ca:	20 95       	com	r18
+ 4cc:	82 23       	and	r24, r18
+ 4ce:	88 83       	st	Y, r24
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 4d0:	ec 91       	ld	r30, X
+ 4d2:	2e 23       	and	r18, r30
+ 4d4:	0b c0       	rjmp	.+22     	; 0x4ec <pinMode+0x86>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:50
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 4d6:	62 30       	cpi	r22, 0x02	; 2
+ 4d8:	61 f4       	brne	.+24     	; 0x4f2 <pinMode+0x8c>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:51
+    uint8_t oldSREG = SREG;
+ 4da:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:52
+                cli();
+ 4dc:	f8 94       	cli
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:53
+    *reg &= ~bit;
+ 4de:	88 81       	ld	r24, Y
+ 4e0:	32 2f       	mov	r19, r18
+ 4e2:	30 95       	com	r19
+ 4e4:	83 23       	and	r24, r19
+ 4e6:	88 83       	st	Y, r24
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:54
+    *out |= bit;
+ 4e8:	ec 91       	ld	r30, X
+ 4ea:	2e 2b       	or	r18, r30
+ 4ec:	2c 93       	st	X, r18
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:55
+    SREG = oldSREG;
+ 4ee:	9f bf       	out	0x3f, r25	; 63
+ 4f0:	06 c0       	rjmp	.+12     	; 0x4fe <pinMode+0x98>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:57
+  } else {
+    uint8_t oldSREG = SREG;
+ 4f2:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:58
+                cli();
+ 4f4:	f8 94       	cli
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 4f6:	e8 81       	ld	r30, Y
+ 4f8:	2e 2b       	or	r18, r30
+ 4fa:	28 83       	st	Y, r18
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 4fc:	8f bf       	out	0x3f, r24	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:62
+  }
+}
+ 4fe:	df 91       	pop	r29
+ 500:	cf 91       	pop	r28
+ 502:	08 95       	ret
+
+00000504 <digitalWrite>:
+digitalWrite():
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:137
+    }
+
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 504:	1f 93       	push	r17
+ 506:	cf 93       	push	r28
+ 508:	df 93       	push	r29
+ 50a:	16 2f       	mov	r17, r22
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 50c:	87 ff       	sbrs	r24, 7
+ 50e:	11 c0       	rjmp	.+34     	; 0x532 <digitalWrite+0x2e>
+ 510:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138 (discriminator 1)
+ 512:	41 f0       	breq	.+16     	; 0x524 <digitalWrite+0x20>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138 (discriminator 2)
+ 514:	81 30       	cpi	r24, 0x01	; 1
+ 516:	41 f0       	breq	.+16     	; 0x528 <digitalWrite+0x24>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138 (discriminator 4)
+ 518:	82 30       	cpi	r24, 0x02	; 2
+ 51a:	41 f0       	breq	.+16     	; 0x52c <digitalWrite+0x28>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138 (discriminator 6)
+ 51c:	83 30       	cpi	r24, 0x03	; 3
+ 51e:	41 f0       	breq	.+16     	; 0x530 <digitalWrite+0x2c>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:138
+ 520:	8f ef       	ldi	r24, 0xFF	; 255
+ 522:	07 c0       	rjmp	.+14     	; 0x532 <digitalWrite+0x2e>
+ 524:	85 e0       	ldi	r24, 0x05	; 5
+ 526:	05 c0       	rjmp	.+10     	; 0x532 <digitalWrite+0x2e>
+ 528:	82 e0       	ldi	r24, 0x02	; 2
+ 52a:	03 c0       	rjmp	.+6      	; 0x532 <digitalWrite+0x2e>
+ 52c:	84 e0       	ldi	r24, 0x04	; 4
+ 52e:	01 c0       	rjmp	.+2      	; 0x532 <digitalWrite+0x2e>
+ 530:	83 e0       	ldi	r24, 0x03	; 3
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:139
+  uint8_t timer = digitalPinToTimer(pin);
+ 532:	28 2f       	mov	r18, r24
+ 534:	30 e0       	ldi	r19, 0x00	; 0
+ 536:	f9 01       	movw	r30, r18
+ 538:	e2 5e       	subi	r30, 0xE2	; 226
+ 53a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 53c:	84 91       	lpm	r24, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 53e:	f9 01       	movw	r30, r18
+ 540:	ec 5d       	subi	r30, 0xDC	; 220
+ 542:	ff 4f       	sbci	r31, 0xFF	; 255
+ 544:	d4 91       	lpm	r29, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 546:	f9 01       	movw	r30, r18
+ 548:	e6 5d       	subi	r30, 0xD6	; 214
+ 54a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 54c:	c4 91       	lpm	r28, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 54e:	cc 23       	and	r28, r28
+ 550:	d1 f0       	breq	.+52     	; 0x586 <digitalWrite+0x82>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 552:	81 11       	cpse	r24, r1
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:148 (discriminator 1)
+ 554:	65 df       	rcall	.-310    	; 0x420 <turnOffPWM>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:150
+
+  out = portOutputRegister(port);
+ 556:	ec 2f       	mov	r30, r28
+ 558:	f0 e0       	ldi	r31, 0x00	; 0
+ 55a:	ee 0f       	add	r30, r30
+ 55c:	ff 1f       	adc	r31, r31
+ 55e:	e0 5d       	subi	r30, 0xD0	; 208
+ 560:	ff 4f       	sbci	r31, 0xFF	; 255
+ 562:	a5 91       	lpm	r26, Z+
+ 564:	b4 91       	lpm	r27, Z
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:152
+
+  if (val == LOW) {
+ 566:	11 11       	cpse	r17, r1
+ 568:	08 c0       	rjmp	.+16     	; 0x57a <digitalWrite+0x76>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:153
+    uint8_t oldSREG = SREG;
+ 56a:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:154
+    cli();
+ 56c:	f8 94       	cli
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 56e:	8c 91       	ld	r24, X
+ 570:	d0 95       	com	r29
+ 572:	d8 23       	and	r29, r24
+ 574:	dc 93       	st	X, r29
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:156
+    SREG = oldSREG;
+ 576:	9f bf       	out	0x3f, r25	; 63
+ 578:	06 c0       	rjmp	.+12     	; 0x586 <digitalWrite+0x82>
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:158
+  } else {
+    uint8_t oldSREG = SREG;
+ 57a:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:159
+    cli();
+ 57c:	f8 94       	cli
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 57e:	ec 91       	ld	r30, X
+ 580:	de 2b       	or	r29, r30
+ 582:	dc 93       	st	X, r29
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 584:	8f bf       	out	0x3f, r24	; 63
+C:\Users\smbaker\Documents\Arduino\hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:163
+  }
+}
+ 586:	df 91       	pop	r29
+ 588:	cf 91       	pop	r28
+ 58a:	1f 91       	pop	r17
+ 58c:	08 95       	ret
+
+0000058e <__mulhi3>:
+__mulhi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ 58e:	00 24       	eor	r0, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ 590:	55 27       	eor	r21, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ 592:	04 c0       	rjmp	.+8      	; 0x59c <__mulhi3+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ 594:	08 0e       	add	r0, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ 596:	59 1f       	adc	r21, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ 598:	88 0f       	add	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ 59a:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ 59c:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ 59e:	29 f0       	breq	.+10     	; 0x5aa <__mulhi3+0x1c>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ 5a0:	76 95       	lsr	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ 5a2:	67 95       	ror	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ 5a4:	b8 f3       	brcs	.-18     	; 0x594 <__mulhi3+0x6>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ 5a6:	71 05       	cpc	r23, r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ 5a8:	b9 f7       	brne	.-18     	; 0x598 <__mulhi3+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ 5aa:	80 2d       	mov	r24, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ 5ac:	95 2f       	mov	r25, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ 5ae:	08 95       	ret
+
+000005b0 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2279
+ 5b0:	f8 94       	cli
+
+000005b2 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2281
+ 5b2:	ff cf       	rjmp	.-2      	; 0x5b2 <__stop_program>
