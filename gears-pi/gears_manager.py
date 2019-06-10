@@ -11,6 +11,8 @@ glo_encoder_thread = None
 PIN_RED = 5
 PIN_GREEN = 6
 
+AUTOSHUTDOWN_TIMER = 120
+
 class StepperWithIndicator(Stepper):
     def __init__(self, *args, **kwargs):
         self.color = None
@@ -55,7 +57,7 @@ class StepperWithIndicator(Stepper):
         if state:
             if self.shutdownTimer:
                 self.shutdownTimer.cancel()
-            self.shutdownTimer = threading.Timer(10, self.autoShutdown)
+            self.shutdownTimer = threading.Timer(AUTOSHUTDOWN_TIMER, self.autoShutdown)
             self.shutdownTimer.start()
         super(StepperWithIndicator, self).enable(state)
         self.blink()
