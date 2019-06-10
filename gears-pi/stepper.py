@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO 
 import time
+import pigpio
 
 DEFAULT_PIN_STEP = 18
 DEFAULT_PIN_ENABLE = 27
@@ -13,36 +14,49 @@ class Stepper(object):
                  pin_enable=DEFAULT_PIN_ENABLE, 
                  freq=100,
                  microsteps=4,
-                 steps_per_rev=200):
+                 steps_per_rev=200,
+                 pigpio=None):
         self._pin_step = pin_step
         self._pin_dir = pin_dir
         self._pin_enable = pin_enable
         self._microsteps = microsteps
         self._steps_per_rev = steps_per_rev
-        self._enabled = True
+        self._enabled = False
+        self._pigpio = pigpio
+        self._maxfreq = 4000
 
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(self._pin_step, GPIO.OUT)
+        
         GPIO.setup(self._pin_dir, GPIO.OUT)
         GPIO.setup(self._pin_enable, GPIO.OUT)
 
         GPIO.output(self._pin_dir, 0)
-        GPIO.output(self._pin_enable, 1)
+        GPIO.output(self._pin_enable, 0)  # start in disabled state
 
         self._freq = freq
-        self.pwm = GPIO.PWM(self._pin_step, freq)
-        self.pwm.start(50)
+
+        if self._pigpio:
+            self._pigpio.hardware_PWM(self._pin_step, self._freq, 500000)
+        else:
+            GPIO.setup(self._pin_step, GPIO.OUT)   # software PWM :(
+            self.pwm = GPIO.PWM(self._pin_step, self._freq)    # software PWM :(
+            self.pwm.start(50)
 
     def onFreqChange(self):
         pass
 
     def set_freq(self, freq):
         self._freq = freq
-        self.pwm.ChangeFrequency(self._freq)
+
+        if self._pigpio:
+            self._pigpio.hardware_PWM(self._pin_step, self._freq, 500000)
+        else:
+            self.pwm.ChangeFrequency(self._freq)    # software PWM :(
+
         self.onFreqChange()
 
     def adjust_freq(self, amount):
-        new_freq = min(max(self._freq + amount, 1), 10000)
+        new_freq = min(max(self._freq + amount, 1), self._maxfreq)
         self.set_freq(new_freq)
 
     def get_freq(self):
@@ -61,6 +75,9 @@ class Stepper(object):
         else:
             GPIO.output(self._pin_enable, 0)
         self._enabled = state
+
+    def get_enabled(self):
+        return self._enabled
 
 def main():
     stepper = Stepper()

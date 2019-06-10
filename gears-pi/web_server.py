@@ -11,4 +11,7 @@ if __name__ == "__main__":
     args = gears_manager.parse_args()
     gears_manager.startup(args)
 
-    execute_from_command_line([sys.executable, "runserver", "0.0.0.0:80", "--noreload"])
+    try:
+        execute_from_command_line([sys.executable, "runserver", "0.0.0.0:80", "--noreload"])
+    finally:
+        gears_manager.glo_stepper.enable(False)

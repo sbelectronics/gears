@@ -28,3 +28,7 @@ This repository holds two related projects. The first is a stepper motor control
   GPIO19 - Button1
 
   Note: Board error - Enc_B and Enc_Blu were connected
+
+  auto startup:
+  sudo crontab -e
+      @reboot bash /home/pi/gears/start_web.sh &> /dev/null   

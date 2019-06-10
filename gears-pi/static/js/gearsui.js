@@ -3,10 +3,10 @@ COLORS = ["red", "green", "blue", "white", "magenta", "yellow", "cyan",  "black"
 function gears() {
     onFreqChange = function() {
         console.log("FreqChange");
-        volume = $("#slider-freq").slider("value");
-        $("#freq-setPoint").text(volume);
+        freq = $("#slider-freq").slider("value");
+        $("#freq-setPoint").text(freq);
         if (gears.postUI) {
-            gears.sendFreq(volume);
+            gears.sendFreq(freq);
         }
     }
 
@@ -46,8 +46,9 @@ function gears() {
         }
     }
 
-    sendVolume = function(freq) {
+    sendFreq = function(freq) {
         $.ajax({url: "/gears/setFreq?freq=" + freq});
+        gears.ignoreOne = true;  // ignore the next getStatus as it might be stale
     }
 
     setPower = function(value) {
@@ -56,7 +57,7 @@ function gears() {
 
     initButtons = function() {
         $("#slider-freq").slider({min: 1,
-                                    max:1625,
+                                    max:4000,
                                     change: this.onFreqChange,
                                     start: this.onFreqStartSlide,
                                     stop: this.onFreqStopSlide});
@@ -69,8 +70,10 @@ function gears() {
         //console.log(settings);
         this.postUI = false;
         try {
-            $("#slider-freq").slider({value: settings.freq});
-            $("#freq-moving").text("");
+            if ((!gears.freqSliding) && (!gears.ignoreOne)) {
+                $("#slider-freq").slider({value: settings.freq});
+            }
+            gears.ignoreOne = false;
             if (settings["enabled"]) {
                 if (! $("#power-on").hasClass("active") ) {
                     $("#icon-power-on").click();
@@ -88,7 +91,7 @@ function gears() {
 
     requestSettings = function() {
         $.ajax({
-            url: "/gears/getSettings",
+            url: "/gears/getStatus",
             dataType : 'json',
             type : 'GET',
             success: function(newData) {

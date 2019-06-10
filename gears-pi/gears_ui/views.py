@@ -19,7 +19,7 @@ def setFreq(request):
     return HttpResponse("okey dokey")
 
 def setEnable(request):
-    glo_stepper.enable(request.GET.get("enable", "0") == "1")
+    glo_stepper.enable(request.GET.get("value", "0") == "1")
 
     return HttpResponse("okey dokey")
 
