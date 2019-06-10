@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html><head>
+  <script src="{% static 'js/vendor/jquery-1.9.1.js' %}"></script>
+  <script src="{% static 'js/vendor/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/vendor/chosen.jquery.js' %}"></script>
+  <script src="{% static 'js/seeburg.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/bootstrap-3.2.0.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stereoui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/color-buttons.css' %}">
+  <link rel="stylesheet" href="{% static 'css/chosen.css' %}">
+</head>
+<body>
+
+    <div id="common-controls" class="box">
+        <h3>Power</h3>
+        <button class ="btn btn-red btn-power" id="power-on"><span id="icon-power-on" class="icon-power glyphicon glyphicon-ok" aria-hidden="true"></span> on</button>
+        <button class ="btn btn-black btn-power" id="power-off"><span id="icon-power-off" class="icon-power glyphicon glyphicon-ok" aria-hidden="true"></span> off</button>
+        <h3>Frequency</h3>
+        <div>
+            <div id="slider-freq"></div>
+            <div id="below-freq-slider"><span id="freq-setPoint"></span><span id="freq-moving"></span></div>
+        </div>
+    </div>
+
+
+
+</body>
