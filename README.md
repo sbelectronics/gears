@@ -23,6 +23,8 @@ This repository holds two related projects. The first is a stepper motor control
   GPIO25 - Enc_sw
   GPIO05 - Enc_R
   GPIO06 - Enc_G
-  GPIO07 - Enc_B
+  GPIO07 - Enc_Blu
   GPIO13 - Button0
   GPIO19 - Button1
+
+  Note: Board error - Enc_B and Enc_Blu were connected

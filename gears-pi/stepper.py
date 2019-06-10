@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 DEFAULT_PIN_STEP = 18
-DEFAULT_PIN_ENABLE = 19
+DEFAULT_PIN_ENABLE = 27
 DEFAULT_PIN_DIR = 17
 
 
@@ -19,6 +19,7 @@ class Stepper(object):
         self._pin_enable = pin_enable
         self._microsteps = microsteps
         self._steps_per_rev = steps_per_rev
+        self._enabled = True
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self._pin_step, GPIO.OUT)
@@ -26,7 +27,7 @@ class Stepper(object):
         GPIO.setup(self._pin_enable, GPIO.OUT)
 
         GPIO.output(self._pin_dir, 0)
-        GPIO.output(self._pin_enable, 0)
+        GPIO.output(self._pin_enable, 1)
 
         self._freq = freq
         self.pwm = GPIO.PWM(self._pin_step, freq)
@@ -53,6 +54,13 @@ class Stepper(object):
     def get_period(self):
         # return milliseconds per revolution
         return 60000 / self.get_rpm()
+
+    def enable(self, state):
+        if state:
+            GPIO.output(self._pin_enable, 1)
+        else:
+            GPIO.output(self._pin_enable, 0)
+        self._enabled = state
 
 def main():
     stepper = Stepper()

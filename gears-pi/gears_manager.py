@@ -1,7 +1,7 @@
 import argparse
 import RPi.GPIO as GPIO 
 import threading
-from gears import Stepper
+from stepper import Stepper
 from smbpi.encoder import EncoderThread
 
 glo_stepper = None

@@ -60,6 +60,7 @@ def main():
                     last_freq = stepper.get_freq()
         finally:
             termios.tcsetattr(stdin_fd, termios.TCSAFLUSH, old_term)
+            stepper.enable(False)
 
     else:
         while True:
