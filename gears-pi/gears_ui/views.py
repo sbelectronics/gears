@@ -18,6 +18,11 @@ def setFreq(request):
 
     return HttpResponse("okey dokey")
 
+def setFreqPercent(request):
+    glo_stepper.set_freq_percent(int(request.GET.get("percent", "0")))
+
+    return HttpResponse("okey dokey")
+
 def setEnable(request):
     glo_stepper.enable(request.GET.get("value", "0") == "1")
 
@@ -25,6 +30,7 @@ def setEnable(request):
 
 def getStatus(request):
     result = {"freq": glo_stepper.get_freq(),
+              "freqPercent": glo_stepper.get_freq()*100/glo_stepper.get_maxfreq(),
               "enabled": glo_stepper.get_enabled()}
 
     return HttpResponse(json.dumps(result), content_type='application/javascript')

@@ -5,6 +5,7 @@ from gears_ui import views
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
     url(r'^setFreq$', views.setFreq, name='setFreq'),
+    url(r'^setFreqPercent$', views.setFreqPercent, name='setFreqPercent'),
     url(r'^setEnable$', views.setEnable, name='setEnable'),
     url(r'^getStatus$', views.getStatus, name='getStatus'),
 )

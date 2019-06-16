@@ -47,7 +47,7 @@ function gears() {
     }
 
     sendFreq = function(freq) {
-        $.ajax({url: "/gears/setFreq?freq=" + freq});
+        $.ajax({url: "/gears/setFreqPercent?percent=" + freq});
         gears.ignoreOne = true;  // ignore the next getStatus as it might be stale
     }
 
@@ -57,7 +57,7 @@ function gears() {
 
     initButtons = function() {
         $("#slider-freq").slider({min: 1,
-                                    max:4000,
+                                    max:100,
                                     change: this.onFreqChange,
                                     start: this.onFreqStartSlide,
                                     stop: this.onFreqStopSlide});
@@ -71,7 +71,7 @@ function gears() {
         this.postUI = false;
         try {
             if ((!gears.freqSliding) && (!gears.ignoreOne)) {
-                $("#slider-freq").slider({value: settings.freq});
+                $("#slider-freq").slider({value: settings.freqPercent});
             }
             gears.ignoreOne = false;
             if (settings["enabled"]) {
